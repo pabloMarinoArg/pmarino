@@ -25,6 +25,6 @@ body {
 img {
     display: block;
     margin: 0 auto;
-    width: fit-content;
-    height: fit-content;
+    width: 500px;
+    height: 500px;
 }
