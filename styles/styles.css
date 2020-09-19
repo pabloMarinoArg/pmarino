@@ -23,5 +23,6 @@ body {
     border: 5px solid black;
   }
 img {
-    align-content: center;
+    display: block;
+    margin: 0 auto;
 }
