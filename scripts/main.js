@@ -1,6 +1,12 @@
-const miTitulo = document.querySelector('h1');
-miTitulo.textContent = "Hola!"
+let miImagen = document.querySelector("img");
+miImagen.onclick = function(){
+    let miSrc = miImagen.getAttribute("src");
+    if (miSrc === "images/donas.jpg") {
+        miImagen.setAttribute("src", "images/donas2.jpg");
+    
+    }else {
+        miImagen.setAttribute("src", "images/donas.jpg");
+    }
 
-document.querySelector("html").onclick = function(){
-    alert("ouch! Deja de pincharme!!!");
 }
+
