@@ -15,8 +15,12 @@ let miTitulo = document.querySelector("h1");
 
 function establecerNombreUsuario(){
     let miNombre = prompt("Por favor ingrese nombre: ");
+    if(!miNombre){
+        establecerNombreUsuario();
+    }else{
     localStorage.setItem("nombre", miNombre);
     miTitulo.textContent = "Mozilla es genial, " + miNombre;
+    }
 }
 if (!localStorage.getItem("nombre")) {
     establecerNombreUsuario();
